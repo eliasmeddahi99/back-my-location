@@ -181,7 +181,7 @@ router.get('/:nickname', (req, res) => {
    const nickname = req.params.nickname
 
    Marker.find({nickname}).then(data => {
-      console.log("dataaaaaaa",data)
+      //console.log("dataaaaaaa",data)
     if (data.length > 0) {
       res.json({ result: true, places : data });
     } else {
